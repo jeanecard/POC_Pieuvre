@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="POC de Pieuvre sur navigateur. Uniquement prise en compte des évenements souris...">
+    <meta name="author" content="HR Corp">
+    <link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="./View/hrstyle.css">
+	
+    <title>HRPieuvre</title>
+
+    <!-- Bootstrap core CSS -->
+	
+	   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+
+  </head>
+
+  <body>
+	<div>
+	<!-- Composant utilisé pour debug. -->
+	<!-- <label id="lblScreenWidth"></label> -->
+	</div>
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-heading"><h1>Multi-Front view of same objects</h1></div>
+			<div class="panel-heading"><h5>Coming soon on tablet/phones (Mouse wheel to zoom +/-)</h5></div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-heading"><h3>Normal Front View</h3></div>
+		</div>
+	</div>
+	<div class="container"> 
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div class="row"> 
+					<div class="col-sm-12"> 
+						<div>
+							<canvas id="mon_canvas" width="900" height="400" >Not available in this Browser, sorry.</canvas> 
+						</div>
+					</div> 
+				</div> 
+			</div> 
+		</div> 
+	</div> 
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-heading"><h3>Zoomed out Front View</h3></div>
+		</div>
+	</div>
+	<div class="container"> 
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div class="row"> 
+					<div class="col-sm-12"> 
+						<!-- <canvas id="mon_canvas2" width="900" height="400" class="canvas">mon_Canvas2</canvas>  -->
+						<canvas id="mon_canvas2" width="900" height="400">Not available in this Browser, sorry.</canvas> 
+					</div>			 
+				</div> 						
+			</div> 
+		</div> 
+	</div> 
+
+	
+	<!-- Référencement des biblihothèqes en fin de HTML -->
+	<!-- Il reste à faire un minify pour eviter de référencer tous les fichiers individuellement de la bibli... -->
+	<script src="./Utils/math.js" type="text/javascript"></script>
+	<script src="./Utils/HRConst.js" type="text/javascript"></script>
+	<script src="./Model/HRDocument.js"></script>
+	<script src="./Model/HRLayer.js"></script>
+	<script src="./Model/HRPoint.js"></script>
+	<script src="./Model/HRBoundingRect.js"></script>
+	<script src="./Model/HRMovingHandle.js"></script>
+	<script src="./Model/HRShape.js"></script>
+	<script src="./Model/HRPolyline.js"></script>
+	<script src="./Model/HRRectangle.js"></script>
+	<script src="./Controller/HRBaseController.js"></script>
+	<script src="./Controller/HRSelectorController.js"></script>
+	<script src="./Controller/HRFactory.js"></script>
+	<script src="./View/HRBarycentreRenderer.js"></script>
+	<script src="./View/HRRotationRenderer.js"></script>
+	<script src="./View/HR2DView.js"></script>
+	<script src="./View/AbstractShapeRenderer.js"></script>
+	<script src="./View/HR2DShapeRenderer.js"></script>
+	<script src="./main.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- <script src="../View/bootstrap/docs/assets/js/ie10-viewport-bug-workaround.js"></script> -->
+	
+	<!-- Composant utilisé pour debug. -->
+	 <!-- <script> -->
+	<!-- window.addEventListener('resize', function(event){ -->
+		<!-- document.getElementById("lblScreenWidth").innerHTML = $(window).width();  -->
+		<!-- }); -->
+	 <!-- </script> -->
+
+  </body>
+</html>
